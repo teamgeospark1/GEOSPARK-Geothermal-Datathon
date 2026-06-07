@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;font-family:"Courier New",monospace;color:#111;font-size:11px}
+.wrap{padding:10px;overflow-x:auto}
+h2{font-size:12px;font-weight:700;letter-spacing:2px;text-align:center;border-bottom:2px solid #111;padding-bottom:5px;margin-bottom:3px}
+.sub{font-size:8px;text-align:center;letter-spacing:1px;margin-bottom:8px;color:#333}
+svg text{font-family:"Courier New",monospace}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h2>P&amp;ID — GEOTHERMAL DISTRICT ENERGY SYSTEM  [REV B — CORRECTED]</h2>
+<div class="sub">BLT-01 · ZST-01 · ODK-01 (ALL PRODUCERS) | ROTLIEGEND SANDSTONE | UTRECHT SCIENCE PARK | SPE DATATHON 2026</div>
+<svg viewBox="0 0 1500 2350" style="width:100%;display:block;max-width:1500px;margin:0 auto">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+  <path d="M1 2L9 5L1 8" fill="none" stroke="#111" stroke-width="1.5" stroke-linejoin="round"/>
+</marker>
+<marker id="as" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+  <path d="M1 2L9 5L1 8" fill="none" stroke="#111" stroke-width="1.5" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<!-- ══════════════════════════════════════════
+     OUTER BORDER & TITLE
+══════════════════════════════════════════ -->
+<rect x="8" y="8" width="1484" height="2334" fill="none" stroke="#111" stroke-width="2"/>
+<rect x="8" y="8" width="1484" height="22" fill="none" stroke="#111" stroke-width="1"/>
+<text x="750" y="23" font-size="10" font-weight="700" letter-spacing="1.5" text-anchor="middle">P&amp;ID — GEOTHERMAL DISTRICT ENERGY SYSTEM | BLT-01 · ZST-01 · ODK-01 | UTRECHT SCIENCE PARK, NL | SPE DATATHON 2026 | REV B</text>
+
+<!-- Stage divider lines -->
+<line x1="25" y1="310" x2="1490" y2="310" stroke="#111" stroke-width="0.6" stroke-dasharray="5 3"/>
+<line x1="25" y1="490" x2="1490" y2="490" stroke="#111" stroke-width="0.6" stroke-dasharray="5 3"/>
+<line x1="25" y1="710" x2="1490" y2="710" stroke="#111" stroke-width="0.6" stroke-dasharray="5 3"/>
+<line x1="25" y1="910" x2="1490" y2="910" stroke="#111" stroke-width="0.6" stroke-dasharray="5 3"/>
+<line x1="25" y1="1100" x2="1490" y2="1100" stroke="#111" stroke-width="0.6" stroke-dasharray="5 3"/>
+<line x1="25" y1="1290" x2="1490" y2="1290" stroke="#111" stroke-width="0.6" stroke-dasharray="5 3"/>
+<line x1="25" y1="1510" x2="1490" y2="1510" stroke="#111" stroke-width="0.6" stroke-dasharray="5 3"/>
+<line x1="25" y1="1720" x2="1490" y2="1720" stroke="#111" stroke-width="0.6" stroke-dasharray="5 3"/>
+
+<!-- Stage side labels -->
+<text x="14" y="200" font-size="7" font-weight="700" text-anchor="middle" transform="rotate(-90,14,200)">STG 1</text>
+<text x="14" y="405" font-size="7" font-weight="700" text-anchor="middle" transform="rotate(-90,14,405)">STG 2</text>
+<text x="14" y="605" font-size="7" font-weight="700" text-anchor="middle" transform="rotate(-90,14,605)">STG 3</text>
+<text x="14" y="815" font-size="7" font-weight="700" text-anchor="middle" transform="rotate(-90,14,815)">STG 4</text>
+<text x="14" y="1005" font-size="7" font-weight="700" text-anchor="middle" transform="rotate(-90,14,1005)">STG 5</text>
+<text x="14" y="1195" font-size="7" font-weight="700" text-anchor="middle" transform="rotate(-90,14,1195)">STG 6</text>
+<text x="14" y="1405" font-size="7" font-weight="700" text-anchor="middle" transform="rotate(-90,14,1405)">STG 7</text>
+<text x="14" y="1615" font-size="7" font-weight="700" text-anchor="middle" transform="rotate(-90,14,1615)">STG 8</text>
+<text x="14" y="1830" font-size="7" font-weight="700" text-anchor="middle" transform="rotate(-90,14,1830)">INJ</text>
+
+<!-- Stage heading banners -->
+<text x="750" y="325" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle">STAGE 1 — SUBSURFACE PRODUCTION  (THREE PRODUCING WELLS)</text>
+<text x="750" y="505" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle">STAGE 2 — BRINE GATHERING, TREATMENT &amp; FLOW SPLITTING</text>
+<text x="750" y="725" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle">STAGE 3 — PRIMARY HEAT EXCHANGE  (BRINE → DISTRICT HEATING WATER)</text>
+<text x="750" y="925" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle">STAGE 4 — HEAT PUMP  (65°C → 80-85°C BOOST)</text>
+<text x="750" y="1115" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle">STAGE 5 — THERMAL STORAGE  (HOT &amp; COLD BUFFER TANKS)</text>
+<text x="750" y="1305" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle">STAGE 6 — DISTRICT HEATING DISTRIBUTION  (SUBSTATION → BUILDINGS)</text>
+<text x="750" y="1525" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle">STAGE 7 — COOLING PRODUCTION  (ABSORPTION CHILLER)</text>
+<text x="750" y="1735" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle">STAGE 8 — BRINE COOLING &amp; REINJECTION</text>
+
+<!-- ══════════════════════════════════════════
+     STAGE 1 — THREE PRODUCER WELLHEADS
+     BLT-01 x=160, ZST-01 x=600, ODK-01 x=1040
+══════════════════════════════════════════ -->
+
+<!-- ── BLT-01 ── -->
+<rect x="95" y="48" width="130" height="245" rx="2" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="160" y="66" font-size="10" font-weight="700" text-anchor="middle">BLT-01</text>
+<text x="160" y="79" font-size="8" text-anchor="middle">PRODUCER WELL</text>
+<text x="160" y="91" font-size="7.5" text-anchor="middle">Depth: 1837m</text>
+<text x="160" y="103" font-size="7.5" text-anchor="middle">77°C | 12 bar | 105 m³/h</text>
+<!-- ESP pump -->
+<circle cx="160" cy="155" r="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="160" y="151" font-size="8" font-weight="700" text-anchor="middle">ESP</text>
+<text x="160" y="163" font-size="7" text-anchor="middle">PUMP</text>
+<!-- Christmas tree -->
+<rect x="136" y="198" width="48" height="22" rx="1" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="160" y="213" font-size="7" font-weight="700" text-anchor="middle">X-MAS TREE</text>
+<!-- PT gauge -->
+<circle cx="205" cy="209" r="10" fill="none" stroke="#111" stroke-width="1"/>
+<text x="205" y="206" font-size="6" font-weight="700" text-anchor="middle">PT</text>
+<text x="205" y="216" font-size="6" text-anchor="middle">101</text>
+<!-- Check valve -->
+<polygon points="160,223 150,236 170,236" fill="#111"/>
+<line x1="160" y1="220" x2="160" y2="293" stroke="#111" stroke-width="2"/>
+<text x="168" y="255" font-size="7" fill="#111">S-101</text>
+<text x="168" y="265" font-size="7" fill="#111">77°C·11bar</text>
+<text x="168" y="275" font-size="7" fill="#111">105 m³/h</text>
+
+<!-- ── ZST-01 ── -->
+<rect x="535" y="48" width="130" height="245" rx="2" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="600" y="66" font-size="10" font-weight="700" text-anchor="middle">ZST-01</text>
+<text x="600" y="79" font-size="8" text-anchor="middle">PRODUCER WELL</text>
+<text x="600" y="91" font-size="7.5" text-anchor="middle">Depth: 1924m</text>
+<text x="600" y="103" font-size="7.5" text-anchor="middle">79°C | 14 bar | 83 m³/h</text>
+<circle cx="600" cy="155" r="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="600" y="151" font-size="8" font-weight="700" text-anchor="middle">ESP</text>
+<text x="600" y="163" font-size="7" text-anchor="middle">PUMP</text>
+<rect x="576" y="198" width="48" height="22" rx="1" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="600" y="213" font-size="7" font-weight="700" text-anchor="middle">X-MAS TREE</text>
+<circle cx="645" cy="209" r="10" fill="none" stroke="#111" stroke-width="1"/>
+<text x="645" y="206" font-size="6" font-weight="700" text-anchor="middle">PT</text>
+<text x="645" y="216" font-size="6" text-anchor="middle">102</text>
+<polygon points="600,223 590,236 610,236" fill="#111"/>
+<line x1="600" y1="220" x2="600" y2="293" stroke="#111" stroke-width="2"/>
+<text x="608" y="255" font-size="7">S-102</text>
+<text x="608" y="265" font-size="7">79°C·13bar</text>
+<text x="608" y="275" font-size="7">83 m³/h</text>
+
+<!-- ── ODK-01 (PRODUCER — CORRECTED) ── -->
+<rect x="975" y="48" width="130" height="245" rx="2" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="1040" y="66" font-size="10" font-weight="700" text-anchor="middle">ODK-01</text>
+<text x="1040" y="79" font-size="8" text-anchor="middle">PRODUCER WELL</text>
+<text x="1040" y="91" font-size="7.5" text-anchor="middle">Depth: 1986m</text>
+<text x="1040" y="103" font-size="7.5" text-anchor="middle">81°C | 13 bar | 76 m³/h</text>
+<circle cx="1040" cy="155" r="28" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="1040" y="151" font-size="8" font-weight="700" text-anchor="middle">ESP</text>
+<text x="1040" y="163" font-size="7" text-anchor="middle">PUMP</text>
+<rect x="1016" y="198" width="48" height="22" rx="1" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="1040" y="213" font-size="7" font-weight="700" text-anchor="middle">X-MAS TREE</text>
+<circle cx="1085" cy="209" r="10" fill="none" stroke="#111" stroke-width="1"/>
+<text x="1085" y="206" font-size="6" font-weight="700" text-anchor="middle">PT</text>
+<text x="1085" y="216" font-size="6" text-anchor="middle">103</text>
+<polygon points="1040,223 1030,236 1050,236" fill="#111"/>
+<line x1="1040" y1="220" x2="1040" y2="293" stroke="#111" stroke-width="2"/>
+<text x="1048" y="255" font-size="7">S-103</text>
+<text x="1048" y="265" font-size="7">81°C·12bar</text>
+<text x="1048" y="275" font-size="7">76 m³/h</text>
+
+<!-- Pipes down into stage 2 -->
+<line x1="160" y1="293" x2="160" y2="340" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<line x1="600" y1="293" x2="600" y2="340" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<line x1="1040" y1="293" x2="1040" y2="340" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+
+<!-- ══════════════════════════════════════════
+     STAGE 2 — BRINE TREATMENT & FLOW SPLITTER
+══════════════════════════════════════════ -->
+
+<!-- Combined header line -->
+<line x1="160" y1="355" x2="600" y2="355" stroke="#111" stroke-width="2"/>
+<line x1="600" y1="355" x2="1040" y2="355" stroke="#111" stroke-width="2"/>
+<!-- FM-03 at junction -->
+<circle cx="600" cy="355" r="12" fill="white" stroke="#111" stroke-width="1.2"/>
+<text x="600" y="352" font-size="6.5" font-weight="700" text-anchor="middle">FM</text>
+<text x="600" y="362" font-size="6.5" text-anchor="middle">03</text>
+<text x="620" y="348" font-size="7.5" font-weight="700">264 m³/h COMBINED HEADER</text>
+
+<!-- Header down to SD-01 -->
+<line x1="600" y1="367" x2="600" y2="385" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+
+<!-- SD-01 Sand Separator -->
+<rect x="510" y="385" width="180" height="42" rx="2" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="600" y="401" font-size="9" font-weight="700" text-anchor="middle">SD-01  SAND SEPARATOR / DESANDER</text>
+<text x="600" y="413" font-size="7.5" text-anchor="middle">Hydrocyclone | 300 m³/h rated | &lt;10 ppm solids | 10 bar</text>
+<text x="600" y="423" font-size="7" text-anchor="middle">Stream S-104 out — 264 m³/h | 79°C avg</text>
+
+<!-- Down from SD-01 to filters -->
+<line x1="600" y1="427" x2="600" y2="442" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+
+<!-- BF-01A/B Duplex Filters -->
+<rect x="490" y="442" width="100" height="42" rx="1" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="540" y="458" font-size="9" font-weight="700" text-anchor="middle">BF-01A</text>
+<text x="540" y="470" font-size="7.5" text-anchor="middle">DUTY FILTER</text>
+<text x="540" y="480" font-size="7" text-anchor="middle">5 μm cartridge</text>
+<rect x="610" y="442" width="100" height="42" rx="1" fill="none" stroke="#111" stroke-width="1.5" stroke-dasharray="5 2"/>
+<text x="660" y="458" font-size="9" font-weight="700" text-anchor="middle">BF-01B</text>
+<text x="660" y="470" font-size="7.5" text-anchor="middle">STANDBY FILTER</text>
+<text x="660" y="480" font-size="7" text-anchor="middle">5 μm cartridge</text>
+<!-- Branch to both filters -->
+<line x1="600" y1="442" x2="540" y2="442" stroke="#111" stroke-width="1.5"/>
+<line x1="600" y1="442" x2="660" y2="442" stroke="#111" stroke-width="1.5" stroke-dasharray="5 2"/>
+<!-- Both re-join -->
+<line x1="540" y1="484" x2="540" y2="495" stroke="#111" stroke-width="1.5"/>
+<line x1="660" y1="484" x2="660" y2="495" stroke="#111" stroke-width="1.5" stroke-dasharray="5 2"/>
+<line x1="540" y1="495" x2="660" y2="495" stroke="#111" stroke-width="1.5"/>
+<line x1="600" y1="495" x2="600" y2="508" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+
+<!-- ══ CI-01 & SI-01 DOSING — INJECT INTO COMBINED HEADER (before split) ══ -->
+<!-- CI-01 -->
+<rect x="280" y="508" width="110" height="42" rx="1" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="335" y="524" font-size="9" font-weight="700" text-anchor="middle">CI-01</text>
+<text x="335" y="536" font-size="7.5" text-anchor="middle">CORROSION INHIBITOR</text>
+<text x="335" y="546" font-size="7" text-anchor="middle">10–50 ppm metering pump</text>
+<!-- SI-01 -->
+<rect x="810" y="508" width="110" height="42" rx="1" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="865" y="524" font-size="9" font-weight="700" text-anchor="middle">SI-01</text>
+<text x="865" y="536" font-size="7.5" text-anchor="middle">SCALE INHIBITOR</text>
+<text x="865" y="546" font-size="7" text-anchor="middle">5–20 ppm threshold inhibitor</text>
+
+<!-- Dosing lines (dashed) inject into main header at 600,529 -->
+<line x1="390" y1="529" x2="595" y2="529" stroke="#111" stroke-width="1" stroke-dasharray="4 2" marker-end="url(#as)"/>
+<line x1="810" y1="529" x2="605" y2="529" stroke="#111" stroke-width="1" stroke-dasharray="4 2" marker-end="url(#as)"/>
+<text x="510" y="523" font-size="7" font-style="italic">CI dosing →</text>
+<text x="620" y="523" font-size="7" font-style="italic">← SI dosing</text>
+
+<!-- Main treated brine header line (S-105) -->
+<line x1="600" y1="508" x2="600" y2="570" stroke="#111" stroke-width="2.5"/>
+<text x="610" y="542" font-size="7.5" font-weight="700">S-105 TREATED BRINE</text>
+<text x="610" y="553" font-size="7">264 m³/h | 77-81°C | clean + inhibited</text>
+<text x="610" y="563" font-size="7">→ enters FLOW SPLITTER MANIFOLD</text>
+
+<!-- ══ FLOW SPLITTER MANIFOLD ══ -->
+<rect x="430" y="570" width="340" height="48" rx="3" fill="none" stroke="#111" stroke-width="2"/>
+<text x="600" y="589" font-size="10" font-weight="700" text-anchor="middle">FLOW SPLITTER MANIFOLD</text>
+<text x="600" y="602" font-size="8" text-anchor="middle">Three-way split with individual Flow Control Valves (FCV)</text>
+<text x="600" y="612" font-size="7.5" text-anchor="middle">FCV-01 (105 m³/h) | FCV-02 (83 m³/h) | FCV-03 (76 m³/h)</text>
+
+<!-- Three outlet pipes from manifold -->
+<!-- FCV-01 → PHE-01 (left, x=220) -->
+<line x1="600" y1="618" x2="600" y2="628" stroke="#111" stroke-width="2"/>
+<line x1="600" y1="628" x2="220" y2="628" stroke="#111" stroke-width="2"/>
+<!-- FCV valve symbol on left branch -->
+<polygon points="220,628 208,620 208,636" fill="none" stroke="#111" stroke-width="1.5"/>
+<polygon points="208,620 196,628 208,636" fill="none" stroke="#111" stroke-width="1.5"/>
+<line x1="202" y1="628" x2="195" y2="628" stroke="#111" stroke-width="1.2"/>
+<circle cx="202" cy="618" r="7" fill="white" stroke="#111" stroke-width="1"/>
+<text x="202" y="615.5" font-size="5.5" font-weight="700" text-anchor="middle">FCV</text>
+<text x="202" y="623" font-size="5.5" text-anchor="middle">01</text>
+<text x="180" y="643" font-size="7" text-anchor="middle">105 m³/h</text>
+<line x1="196" y1="628" x2="220" y2="628" stroke="#111" stroke-width="2"/>
+<line x1="220" y1="628" x2="220" y2="645" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+
+<!-- FCV-02 → PHE-02 (center, x=600) -->
+<polygon points="600,628 588,620 588,636" fill="none" stroke="#111" stroke-width="1.5"/>
+<polygon points="588,620 576,628 588,636" fill="none" stroke="#111" stroke-width="1.5"/>
+<line x1="582" y1="628" x2="575" y2="628" stroke="#111" stroke-width="1.2"/>
+<circle cx="590" cy="618" r="7" fill="white" stroke="#111" stroke-width="1"/>
+<text x="590" y="615.5" font-size="5.5" font-weight="700" text-anchor="middle">FCV</text>
+<text x="590" y="623" font-size="5.5" text-anchor="middle">02</text>
+<text x="600" y="643" font-size="7" text-anchor="middle">83 m³/h</text>
+<line x1="600" y1="628" x2="600" y2="645" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+
+<!-- FCV-03 → PHE-03 (right, x=980) -->
+<line x1="600" y1="628" x2="980" y2="628" stroke="#111" stroke-width="2"/>
+<polygon points="980,628 968,620 968,636" fill="none" stroke="#111" stroke-width="1.5"/>
+<polygon points="968,620 956,628 968,636" fill="none" stroke="#111" stroke-width="1.5"/>
+<line x1="962" y1="628" x2="955" y2="628" stroke="#111" stroke-width="1.2"/>
+<circle cx="970" cy="618" r="7" fill="white" stroke="#111" stroke-width="1"/>
+<text x="970" y="615.5" font-size="5.5" font-weight="700" text-anchor="middle">FCV</text>
+<text x="970" y="623" font-size="5.5" text-anchor="middle">03</text>
+<text x="980" y="643" font-size="7" text-anchor="middle">76 m³/h</text>
+<line x1="955" y1="628" x2="980" y2="628" stroke="#111" stroke-width="2"/>
+<line x1="980" y1="628" x2="980" y2="645" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+
+<!-- Stage 2 bottom arrow to manifold -->
+<line x1="600" y1="570" x2="600" y2="570" stroke="#111" stroke-width="2"/>
+
+<!-- ══════════════════════════════════════════
+     STAGE 3 — THREE PLATE HEAT EXCHANGERS
+══════════════════════════════════════════ -->
+
+<!-- PHE-01 (BLT-01, left, x=150-350) -->
+<rect x="100" y="645" width="240" height="110" rx="2" fill="none" stroke="#111" stroke-width="2"/>
+<!-- HX diagonal marks -->
+<line x1="110" y1="700" x2="330" y2="745" stroke="#111" stroke-width="0.7" opacity="0.4"/>
+<line x1="110" y1="718" x2="330" y2="755" stroke="#111" stroke-width="0.7" opacity="0.4"/>
+<text x="220" y="663" font-size="10" font-weight="700" text-anchor="middle">PHE-01</text>
+<text x="220" y="676" font-size="8" text-anchor="middle">PLATE HEAT EXCHANGER — BLT-01</text>
+<text x="220" y="689" font-size="7.5" text-anchor="middle">Brine in: 105 m³/h | 77°C → 35°C</text>
+<text x="220" y="701" font-size="7.5" text-anchor="middle">DH side: 30°C → 65°C | Duty: 5.5 MW</text>
+<text x="220" y="713" font-size="7" text-anchor="middle">Titanium plates | PN16 brine | PN10 DH</text>
+<text x="220" y="725" font-size="7" text-anchor="middle">S-106 brine → 35°C cooled</text>
+<text x="220" y="745" font-size="7.5" font-weight="700" text-anchor="middle">5.5 MW THERMAL OUTPUT</text>
+
+<!-- PHE-02 (ZST-01, center, x=480-720) -->
+<rect x="480" y="645" width="240" height="110" rx="2" fill="none" stroke="#111" stroke-width="2"/>
+<line x1="490" y1="700" x2="710" y2="745" stroke="#111" stroke-width="0.7" opacity="0.4"/>
+<line x1="490" y1="718" x2="710" y2="755" stroke="#111" stroke-width="0.7" opacity="0.4"/>
+<text x="600" y="663" font-size="10" font-weight="700" text-anchor="middle">PHE-02</text>
+<text x="600" y="676" font-size="8" text-anchor="middle">PLATE HEAT EXCHANGER — ZST-01</text>
+<text x="600" y="689" font-size="7.5" text-anchor="middle">Brine in: 83 m³/h | 79°C → 36°C</text>
+<text x="600" y="701" font-size="7.5" text-anchor="middle">DH side: 30°C → 67°C | Duty: 4.5 MW</text>
+<text x="600" y="713" font-size="7" text-anchor="middle">Titanium plates | PN16 brine | PN10 DH</text>
+<text x="600" y="725" font-size="7" text-anchor="middle">S-107 brine → 36°C cooled</text>
+<text x="600" y="745" font-size="7.5" font-weight="700" text-anchor="middle">4.5 MW THERMAL OUTPUT</text>
+
+<!-- PHE-03 (ODK-01, right, x=860-1100) -->
+<rect x="860" y="645" width="240" height="110" rx="2" fill="none" stroke="#111" stroke-width="2"/>
+<line x1="870" y1="700" x2="1090" y2="745" stroke="#111" stroke-width="0.7" opacity="0.4"/>
+<line x1="870" y1="718" x2="1090" y2="755" stroke="#111" stroke-width="0.7" opacity="0.4"/>
+<text x="980" y="663" font-size="10" font-weight="700" text-anchor="middle">PHE-03</text>
+<text x="980" y="676" font-size="8" text-anchor="middle">PLATE HEAT EXCHANGER — ODK-01</text>
+<text x="980" y="689" font-size="7.5" text-anchor="middle">Brine in: 76 m³/h | 81°C → 36°C</text>
+<text x="980" y="701" font-size="7.5" text-anchor="middle">DH side: 30°C → 68°C | Duty: 4.3 MW</text>
+<text x="980" y="713" font-size="7" text-anchor="middle">Titanium plates | PN16 brine | PN10 DH</text>
+<text x="980" y="725" font-size="7" text-anchor="middle">S-108 brine → 36°C cooled</text>
+<text x="980" y="745" font-size="7.5" font-weight="700" text-anchor="middle">4.3 MW THERMAL OUTPUT</text>
+
+<!-- Brine in pipes from FCV → PHEs -->
+<line x1="220" y1="645" x2="220" y2="628" stroke="#111" stroke-width="2"/>
+<line x1="600" y1="645" x2="600" y2="628" stroke="#111" stroke-width="2"/>
+<line x1="980" y1="645" x2="980" y2="628" stroke="#111" stroke-width="2"/>
+
+<!-- CP-01A/B DH circulation pumps (between PHE-01 and PHE-02) -->
+<circle cx="370" cy="698" r="18" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="370" y="694" font-size="8" font-weight="700" text-anchor="middle">CP-01A</text>
+<text x="370" y="706" font-size="6.5" text-anchor="middle">DUTY VSD</text>
+<circle cx="370" cy="733" r="14" fill="none" stroke="#111" stroke-width="1" stroke-dasharray="4 2"/>
+<text x="370" y="730" font-size="7.5" text-anchor="middle">CP-01B</text>
+<text x="370" y="741" font-size="6" text-anchor="middle">STBY</text>
+<text x="397" y="694" font-size="7">DH circ.</text>
+<text x="397" y="703" font-size="7">~450 m³/h</text>
+
+<!-- DH water collect line from all three PHEs (right side) -->
+<line x1="340" y1="698" x2="350" y2="698" stroke="#111" stroke-width="1.5"/>
+<line x1="720" y1="698" x2="390" y2="698" stroke="#111" stroke-width="1.5"/>
+<line x1="1100" y1="698" x2="900" y2="698" stroke="#111" stroke-width="1.5"/>
+<line x1="900" y1="698" x2="720" y2="698" stroke="#111" stroke-width="1.5"/>
+<text x="780" y="692" font-size="7.5" font-weight="700">DH ~65-68°C collected</text>
+
+<!-- S-109 DH water to heat pump -->
+<line x1="370" y1="680" x2="370" y2="660" stroke="#111" stroke-width="1.5"/>
+<line x1="370" y1="660" x2="370" y2="720" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<line x1="370" y1="748" x2="370" y2="760" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<text x="383" y="766" font-size="7.5" font-weight="700">S-109 | DH 65°C → Stage 4 HP</text>
+<text x="383" y="776" font-size="7">Total Stage 3 output: ~14.3 MW</text>
+
+<!-- Cooled brine S-106/107/108 collect at bottom -->
+<line x1="220" y1="755" x2="220" y2="775" stroke="#111" stroke-width="1.5"/>
+<line x1="600" y1="755" x2="600" y2="775" stroke="#111" stroke-width="1.5"/>
+<line x1="980" y1="755" x2="980" y2="775" stroke="#111" stroke-width="1.5"/>
+<line x1="220" y1="775" x2="980" y2="775" stroke="#111" stroke-width="1.5"/>
+<text x="595" y="790" font-size="7.5" font-weight="700" text-anchor="middle">COMBINED COOLED BRINE HEADER | 264 m³/h | 35-36°C → Stage 8</text>
+<!-- Right pipe to stage 8 -->
+<line x1="980" y1="775" x2="1200" y2="775" stroke="#111" stroke-width="1.5"/>
+<line x1="1200" y1="775" x2="1200" y2="1720" stroke="#111" stroke-width="1.5"/>
+
+<!-- ══════════════════════════════════════════
+     STAGE 4 — HEAT PUMP
+══════════════════════════════════════════ -->
+<!-- HP-01 dashed boundary -->
+<rect x="35" y="930" width="900" height="155" rx="4" fill="none" stroke="#111" stroke-width="1.5" stroke-dasharray="7 3"/>
+<text x="485" y="947" font-size="9" font-weight="700" text-anchor="middle">HP-01  GEOTHERMAL HEAT PUMP  |  COP 4.0 HEATING  |  EER 3.5 COOLING  |  R134a / R290</text>
+
+<!-- HE-01 Evaporator -->
+<rect x="50" y="955" width="160" height="110" rx="2" fill="none" stroke="#111" stroke-width="1.5"/>
+<line x1="60" y1="1005" x2="200" y2="1045" stroke="#111" stroke-width="0.8" opacity="0.4"/>
+<line x1="60" y1="1022" x2="200" y2="1055" stroke="#111" stroke-width="0.8" opacity="0.4"/>
+<text x="130" y="972" font-size="9" font-weight="700" text-anchor="middle">HE-01</text>
+<text x="130" y="984" font-size="8" text-anchor="middle">EVAPORATOR</text>
+<text x="130" y="997" font-size="7.5" text-anchor="middle">DH: 65°C → 55°C</text>
+<text x="130" y="1009" font-size="7.5" text-anchor="middle">R134a evap. ~50°C</text>
+<text x="130" y="1021" font-size="7" text-anchor="middle">Refrigerant absorbs</text>
+<text x="130" y="1033" font-size="7" text-anchor="middle">heat from DH water</text>
+<text x="130" y="1055" font-size="7" text-anchor="middle">DH exits at 55°C</text>
+
+<!-- MC-01 Compressor -->
+<rect x="285" y="955" width="160" height="110" rx="2" fill="none" stroke="#111" stroke-width="1.5"/>
+<!-- Compressor triangle symbol -->
+<polygon points="305,1005 365,965 365,1045" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="415" y="972" font-size="9" font-weight="700" text-anchor="middle">MC-01</text>
+<text x="415" y="984" font-size="8" text-anchor="middle">COMPRESSOR</text>
+<text x="415" y="997" font-size="7.5" text-anchor="middle">Variable Speed Drive</text>
+<text x="415" y="1009" font-size="7.5" text-anchor="middle">50°C → 90°C</text>
+<text x="415" y="1021" font-size="7.5" text-anchor="middle">0.9 MW elec. input</text>
+<text x="415" y="1055" font-size="7" text-anchor="middle">Partial load in shoulder seasons</text>
+
+<!-- CD-01 Condenser -->
+<rect x="520" y="955" width="160" height="110" rx="2" fill="none" stroke="#111" stroke-width="1.5"/>
+<line x1="530" y1="1005" x2="670" y2="1045" stroke="#111" stroke-width="0.8" opacity="0.4"/>
+<line x1="530" y1="1022" x2="670" y2="1055" stroke="#111" stroke-width="0.8" opacity="0.4"/>
+<text x="600" y="972" font-size="9" font-weight="700" text-anchor="middle">CD-01</text>
+<text x="600" y="984" font-size="8" text-anchor="middle">CONDENSER</text>
+<text x="600" y="997" font-size="7.5" text-anchor="middle">R134a 90°C → DH water</text>
+<text x="600" y="1009" font-size="7.5" text-anchor="middle">DH: 55°C → 80-85°C</text>
+<text x="600" y="1021" font-size="7" text-anchor="middle">District heating supply temp</text>
+<text x="600" y="1055" font-size="7.5" font-weight="700" text-anchor="middle">DH SUPPLY STREAM</text>
+
+<!-- CT-01 Cooling Tower -->
+<rect x="980" y="955" width="170" height="110" rx="2" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="1065" y="972" font-size="9" font-weight="700" text-anchor="middle">CT-01</text>
+<text x="1065" y="984" font-size="8" text-anchor="middle">COOLING TOWER</text>
+<text x="1065" y="996" font-size="7.5" text-anchor="middle">Summer reverse cycle</text>
+<text x="1065" y="1008" font-size="7.5" text-anchor="middle">Evaporative | 3 MW rejection</text>
+<text x="1065" y="1020" font-size="7" text-anchor="middle">EER 3.5 | 3.15 MW cooling</text>
+<line x1="1000" y1="1050" x2="1130" y2="1050" stroke="#111" stroke-width="1"/>
+<path d="M1025 1050 Q1065 1038 1105 1050" fill="none" stroke="#111" stroke-width="1.2"/>
+<text x="1065" y="1065" font-size="7" text-anchor="middle">Fan — heat rejection to atmosphere</text>
+
+<!-- Refrigerant loop (dashed) -->
+<line x1="210" y1="1010" x2="285" y2="1010" stroke="#111" stroke-width="1.2" stroke-dasharray="4 2" marker-end="url(#as)"/>
+<text x="247" y="1004" font-size="6.5" text-anchor="middle">R134a vap.</text>
+<line x1="445" y1="1010" x2="520" y2="1010" stroke="#111" stroke-width="1.2" stroke-dasharray="4 2" marker-end="url(#as)"/>
+<text x="482" y="1004" font-size="6.5" text-anchor="middle">R134a comp.</text>
+<!-- Liquid return lower -->
+<line x1="520" y1="970" x2="445" y2="970" stroke="#111" stroke-width="0.8" stroke-dasharray="2 2" marker-end="url(#as)"/>
+<line x1="285" y1="970" x2="210" y2="970" stroke="#111" stroke-width="0.8" stroke-dasharray="2 2" marker-end="url(#as)"/>
+<text x="247" y="966" font-size="6" text-anchor="middle">liq. return</text>
+<text x="482" y="966" font-size="6" text-anchor="middle">liq. return</text>
+
+<!-- CT-01 connection (summer) -->
+<line x1="680" y1="1010" x2="980" y2="1010" stroke="#111" stroke-width="1" stroke-dasharray="4 2" marker-end="url(#as)"/>
+<text x="830" y="1004" font-size="7" text-anchor="middle">summer cooling mode — refrigerant to CT-01</text>
+
+<!-- DH water path S-109 → evap → condenser -->
+<line x1="370" y1="776" x2="370" y2="910" stroke="#111" stroke-width="2"/>
+<line x1="370" y1="910" x2="130" y2="910" stroke="#111" stroke-width="2"/>
+<line x1="130" y1="910" x2="130" y2="955" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<!-- Evap out → condenser in (intermediate 55°C) -->
+<line x1="130" y1="1065" x2="130" y2="1085" stroke="#111" stroke-width="1.5"/>
+<line x1="130" y1="1085" x2="600" y2="1085" stroke="#111" stroke-width="1.5"/>
+<line x1="600" y1="1085" x2="600" y2="1065" stroke="#111" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="365" y="1081" font-size="7" text-anchor="middle">DH water 55°C intermediate</text>
+
+<!-- S-110 DH supply 80-85°C out of condenser -->
+<line x1="600" y1="955" x2="600" y2="928" stroke="#111" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="612" y="926" font-size="8" font-weight="700">S-110 | DH SUPPLY 80-85°C</text>
+<text x="612" y="936" font-size="7">Total plant output: ~16.8 MW → Stage 5</text>
+
+<!-- ══════════════════════════════════════════
+     STAGE 5 — THERMAL STORAGE
+══════════════════════════════════════════ -->
+<!-- HT-01 Hot Tank -->
+<rect x="80" y="1120" width="210" height="145" rx="2" fill="none" stroke="#111" stroke-width="2"/>
+<line x1="85" y1="1186" x2="285" y2="1186" stroke="#111" stroke-width="0.6" stroke-dasharray="4 2"/>
+<line x1="85" y1="1213" x2="285" y2="1213" stroke="#111" stroke-width="0.6" stroke-dasharray="4 2"/>
+<text x="185" y="1138" font-size="10" font-weight="700" text-anchor="middle">HT-01</text>
+<text x="185" y="1152" font-size="8" text-anchor="middle">HOT THERMAL STORAGE TANK</text>
+<text x="185" y="1164" font-size="7.5" text-anchor="middle">1000–1500 m³ | Insulated steel</text>
+<text x="185" y="1197" font-size="7.5" font-weight="700" text-anchor="middle">HOT ZONE 75-80°C</text>
+<text x="185" y="1222" font-size="7" text-anchor="middle">WARM ZONE ~50°C</text>
+<text x="185" y="1240" font-size="7" text-anchor="middle">Stratification baffles</text>
+<text x="185" y="1252" font-size="7" text-anchor="middle">Charges night | Peak discharge 07-09h &amp; 17-20h</text>
+<!-- SP-01A/B -->
+<circle cx="58" cy="1175" r="14" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="58" y="1171" font-size="7.5" font-weight="700" text-anchor="middle">SP01A</text>
+<text x="58" y="1181" font-size="6" text-anchor="middle">DUTY</text>
+<circle cx="58" cy="1210" r="11" fill="none" stroke="#111" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="58" y="1207" font-size="7" text-anchor="middle">SP01B</text>
+<text x="58" y="1217" font-size="6" text-anchor="middle">STBY</text>
+
+<!-- CT-02 Cold Tank -->
+<rect x="730" y="1120" width="210" height="145" rx="2" fill="none" stroke="#111" stroke-width="2"/>
+<line x1="735" y1="1185" x2="935" y2="1185" stroke="#111" stroke-width="0.6" stroke-dasharray="4 2"/>
+<text x="835" y="1138" font-size="10" font-weight="700" text-anchor="middle">CT-02</text>
+<text x="835" y="1152" font-size="8" text-anchor="middle">COLD THERMAL STORAGE TANK</text>
+<text x="835" y="1164" font-size="7.5" text-anchor="middle">500–800 m³ | Insulated</text>
+<text x="835" y="1196" font-size="7.5" font-weight="700" text-anchor="middle">CHILLED WATER 6–10°C</text>
+<text x="835" y="1212" font-size="7" text-anchor="middle">Discharge peak cooling 14:00–17:00</text>
+<text x="835" y="1226" font-size="7" text-anchor="middle">Charges overnight (absorption chiller)</text>
+<text x="835" y="1240" font-size="7" text-anchor="middle">Serves fan coil units &amp; chilled ceilings</text>
+<text x="835" y="1252" font-size="7" text-anchor="middle">Serves radiators &amp; underfloor heating (hot)</text>
+<!-- SP-02A/B -->
+<circle cx="962" cy="1175" r="14" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="962" y="1171" font-size="7.5" font-weight="700" text-anchor="middle">SP02A</text>
+<text x="962" y="1181" font-size="6" text-anchor="middle">DUTY</text>
+<circle cx="962" cy="1210" r="11" fill="none" stroke="#111" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="962" y="1207" font-size="7" text-anchor="middle">SP02B</text>
+<text x="962" y="1217" font-size="6" text-anchor="middle">STBY</text>
+
+<!-- S-110 into HT-01 -->
+<line x1="600" y1="928" x2="600" y2="1110" stroke="#111" stroke-width="2.5"/>
+<line x1="600" y1="1110" x2="185" y2="1110" stroke="#111" stroke-width="2.5"/>
+<line x1="185" y1="1110" x2="185" y2="1120" stroke="#111" stroke-width="2.5" marker-end="url(#a)"/>
+
+<!-- S-111 hot water → Stage 6 -->
+<line x1="290" y1="1192" x2="440" y2="1192" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<text x="295" y="1184" font-size="7.5" font-weight="700">S-111 | 80°C → Stage 6</text>
+
+<!-- S-112 cold → Stage 7 -->
+<line x1="730" y1="1192" x2="580" y2="1192" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<text x="590" y="1184" font-size="7.5" font-weight="700">S-112 | 6-10°C → Cooling network</text>
+
+<!-- Feed pipe: HT-01 → AC-01 generator (dashed, goes to stage 7) -->
+<line x1="185" y1="1265" x2="185" y2="1510" stroke="#111" stroke-width="1.2" stroke-dasharray="5 3"/>
+
+<!-- ══════════════════════════════════════════
+     STAGE 6 — DH DISTRIBUTION
+══════════════════════════════════════════ -->
+<!-- DS-01 Substation -->
+<rect x="360" y="1310" width="200" height="80" rx="2" fill="none" stroke="#111" stroke-width="2"/>
+<text x="460" y="1328" font-size="10" font-weight="700" text-anchor="middle">DS-01</text>
+<text x="460" y="1342" font-size="8" text-anchor="middle">DISTRICT HEATING SUBSTATION</text>
+<text x="460" y="1355" font-size="7.5" text-anchor="middle">Pressure break | PN16 → PN10</text>
+<text x="460" y="1367" font-size="7" text-anchor="middle">Energy meter | TT / FT / PT | SCADA billing OPC-UA</text>
+<text x="460" y="1379" font-size="7" text-anchor="middle">Interface: plant ↔ distribution network</text>
+
+<!-- PB-01A/B Pressure Boosting Pumps -->
+<circle cx="635" cy="1340" r="18" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="635" y="1336" font-size="8" font-weight="700" text-anchor="middle">PB-01A</text>
+<text x="635" y="1347" font-size="6.5" text-anchor="middle">DUTY VSD</text>
+<circle cx="635" cy="1375" r="13" fill="none" stroke="#111" stroke-width="1" stroke-dasharray="4 2"/>
+<text x="635" y="1372" font-size="7.5" text-anchor="middle">PB-01B</text>
+<text x="635" y="1381" font-size="6" text-anchor="middle">STBY</text>
+
+<!-- MS-01 Zone A -->
+<rect x="730" y="1310" width="155" height="70" rx="2" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="807" y="1327" font-size="9" font-weight="700" text-anchor="middle">MS-01  ZONE A</text>
+<text x="807" y="1340" font-size="7.5" text-anchor="middle">University buildings &amp; offices</text>
+<text x="807" y="1353" font-size="7" text-anchor="middle">kWh = Flow × Cp × ΔT</text>
+<text x="807" y="1366" font-size="7" text-anchor="middle">SCADA billing system</text>
+<text x="807" y="1376" font-size="7" text-anchor="middle">HIUs at each building</text>
+
+<!-- MS-02 Zone B -->
+<rect x="900" y="1310" width="165" height="70" rx="2" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="982" y="1327" font-size="9" font-weight="700" text-anchor="middle">MS-02  ZONE B</text>
+<text x="982" y="1340" font-size="7.5" text-anchor="middle">UMC Utrecht Hospital 24/7</text>
+<text x="982" y="1353" font-size="7" text-anchor="middle">Priority connection</text>
+<text x="982" y="1366" font-size="7" text-anchor="middle">Buffer tank on hospital side</text>
+<text x="982" y="1376" font-size="7" text-anchor="middle">Large substation dedicated</text>
+
+<!-- Sportcentrum note -->
+<rect x="1080" y="1310" width="140" height="70" rx="2" fill="none" stroke="#111" stroke-width="1" stroke-dasharray="4 2"/>
+<text x="1150" y="1327" font-size="8" font-weight="700" text-anchor="middle">ZONE C</text>
+<text x="1150" y="1340" font-size="7" text-anchor="middle">Sportcentrum Olympos</text>
+<text x="1150" y="1353" font-size="7" text-anchor="middle">Direct connection</text>
+<text x="1150" y="1366" font-size="7" text-anchor="middle">Lower demand</text>
+<text x="1150" y="1376" font-size="7" text-anchor="middle">Individual substation</text>
+
+<!-- Pipe from S-111 → DS-01 -->
+<line x1="440" y1="1192" x2="460" y2="1192" stroke="#111" stroke-width="2"/>
+<line x1="460" y1="1192" x2="460" y2="1310" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<!-- DS-01 → PB → MS-01 → MS-02 → Zone C -->
+<line x1="560" y1="1350" x2="617" y2="1350" stroke="#111" stroke-width="1.8" marker-end="url(#a)"/>
+<line x1="653" y1="1350" x2="730" y2="1350" stroke="#111" stroke-width="1.8" marker-end="url(#a)"/>
+<line x1="885" y1="1350" x2="900" y2="1350" stroke="#111" stroke-width="1.8" marker-end="url(#a)"/>
+<line x1="1065" y1="1350" x2="1080" y2="1350" stroke="#111" stroke-width="1.8" marker-end="url(#a)"/>
+<!-- DH return -->
+<line x1="360" y1="1370" x2="40" y2="1370" stroke="#111" stroke-width="1" stroke-dasharray="5 3"/>
+<text x="42" y="1364" font-size="7">DH Return ~40°C → back to PHE-01/02/03 (Stage 3)</text>
+
+<!-- ══════════════════════════════════════════
+     STAGE 7 — ABSORPTION CHILLER
+══════════════════════════════════════════ -->
+<!-- AC-01 -->
+<rect x="80" y="1530" width="420" height="155" rx="2" fill="none" stroke="#111" stroke-width="2"/>
+<line x1="290" y1="1538" x2="290" y2="1678" stroke="#111" stroke-width="0.8" stroke-dasharray="4 2"/>
+<text x="290" y="1548" font-size="10" font-weight="700" text-anchor="middle">AC-01  ABSORPTION CHILLER — SINGLE EFFECT LiBr-H₂O</text>
+<text x="185" y="1562" font-size="8" font-weight="700" text-anchor="middle">GENERATOR SECTION</text>
+<text x="185" y="1576" font-size="7.5" text-anchor="middle">Driving heat: 75–80°C geo HW</text>
+<text x="185" y="1589" font-size="7" text-anchor="middle">from HT-01 (same geo source)</text>
+<text x="185" y="1602" font-size="7" text-anchor="middle">Heats LiBr solution → drives</text>
+<text x="185" y="1615" font-size="7" text-anchor="middle">refrigerant (water) vapour out</text>
+<text x="395" y="1562" font-size="8" font-weight="700" text-anchor="middle">EVAPORATOR SECTION</text>
+<text x="395" y="1576" font-size="7.5" text-anchor="middle">Chilled water out: 6–12°C</text>
+<text x="395" y="1589" font-size="7" text-anchor="middle">Refrigerant evap. at low P</text>
+<text x="395" y="1602" font-size="7" text-anchor="middle">absorbs heat from buildings</text>
+<text x="290" y="1630" font-size="7.5" font-weight="700" text-anchor="middle">Capacity: 5 MW cooling primary | COP 0.7</text>
+<text x="290" y="1643" font-size="7" text-anchor="middle">9.2 MW geothermal cooling potential in full summer</text>
+<text x="290" y="1656" font-size="7" text-anchor="middle">+ 3.15 MW from CT-01 (HP cooling mode) = ~12 MW total</text>
+<text x="290" y="1669" font-size="7" text-anchor="middle">Return temp from buildings: ~14°C | Supply: 6-12°C</text>
+
+<!-- CW-01A/B Chilled water pumps -->
+<circle cx="590" cy="1570" r="18" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="590" y="1566" font-size="8" font-weight="700" text-anchor="middle">CW-01A</text>
+<text x="590" y="1577" font-size="6.5" text-anchor="middle">DUTY</text>
+<circle cx="590" cy="1608" r="13" fill="none" stroke="#111" stroke-width="1" stroke-dasharray="4 2"/>
+<text x="590" y="1605" font-size="7.5" text-anchor="middle">CW-01B</text>
+<text x="590" y="1614" font-size="6" text-anchor="middle">STBY</text>
+<text x="615" y="1568" font-size="7">Chilled water</text>
+<text x="615" y="1578" font-size="7">circ. 6-12°C</text>
+<text x="615" y="1590" font-size="7">to cooling network</text>
+
+<!-- Hot water from HT-01 (dashed) to AC-01 generator -->
+<line x1="185" y1="1510" x2="185" y2="1530" stroke="#111" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#as)"/>
+<text x="198" y="1524" font-size="7">75-80°C geo HW driving heat</text>
+
+<!-- Chilled water out to CT-02 -->
+<line x1="500" y1="1600" x2="572" y2="1600" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<line x1="608" y1="1600" x2="680" y2="1600" stroke="#111" stroke-width="2"/>
+<line x1="680" y1="1600" x2="680" y2="1192" stroke="#111" stroke-width="1.5" stroke-dasharray="4 2" marker-end="url(#as)"/>
+<text x="690" y="1400" font-size="7">Chilled water</text>
+<text x="690" y="1410" font-size="7">6-12°C → CT-02</text>
+<text x="690" y="1420" font-size="7">cold storage</text>
+
+<!-- ══════════════════════════════════════════
+     STAGE 8 — BRINE REINJECTION
+══════════════════════════════════════════ -->
+<!-- S-106/107/108 combined cooled brine arrives via right pipe -->
+<line x1="1200" y1="775" x2="1200" y2="1730" stroke="#111" stroke-width="1.5"/>
+<line x1="1200" y1="1730" x2="900" y2="1730" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<text x="1050" y="1724" font-size="7.5" font-weight="700" text-anchor="middle">264 m³/h cooled brine 35-36°C</text>
+
+<!-- FF-01A/B Final Injection Filters -->
+<rect x="680" y="1745" width="110" height="48" rx="1" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="735" y="1762" font-size="9" font-weight="700" text-anchor="middle">FF-01A</text>
+<text x="735" y="1774" font-size="7.5" text-anchor="middle">INJECTION FILTER</text>
+<text x="735" y="1785" font-size="7" text-anchor="middle">DUTY | 10 μm</text>
+<rect x="800" y="1745" width="110" height="48" rx="1" fill="none" stroke="#111" stroke-width="1.5" stroke-dasharray="4 2"/>
+<text x="855" y="1762" font-size="9" font-weight="700" text-anchor="middle">FF-01B</text>
+<text x="855" y="1774" font-size="7.5" text-anchor="middle">INJECTION FILTER</text>
+<text x="855" y="1785" font-size="7" text-anchor="middle">STBY | 10 μm</text>
+
+<!-- Branch to both filters -->
+<line x1="900" y1="1730" x2="735" y2="1730" stroke="#111" stroke-width="2"/>
+<line x1="900" y1="1730" x2="855" y2="1730" stroke="#111" stroke-width="2"/>
+<line x1="735" y1="1730" x2="735" y2="1745" stroke="#111" stroke-width="1.5"/>
+<line x1="855" y1="1730" x2="855" y2="1745" stroke="#111" stroke-width="1.5" stroke-dasharray="4 2"/>
+<line x1="735" y1="1793" x2="735" y2="1810" stroke="#111" stroke-width="1.5"/>
+<line x1="855" y1="1793" x2="855" y2="1810" stroke="#111" stroke-width="1.5"/>
+<line x1="735" y1="1810" x2="855" y2="1810" stroke="#111" stroke-width="1.5"/>
+
+<!-- FM-05 / PT-05 -->
+<circle cx="615" cy="1810" r="12" fill="white" stroke="#111" stroke-width="1.2"/>
+<text x="615" y="1807" font-size="6.5" font-weight="700" text-anchor="middle">FM</text>
+<text x="615" y="1817" font-size="6.5" text-anchor="middle">05</text>
+<circle cx="648" cy="1810" r="12" fill="white" stroke="#111" stroke-width="1.2"/>
+<text x="648" y="1807" font-size="6.5" font-weight="700" text-anchor="middle">PT</text>
+<text x="648" y="1817" font-size="6.5" text-anchor="middle">05</text>
+<line x1="735" y1="1810" x2="660" y2="1810" stroke="#111" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="570" y="1804" font-size="7">Injection monitor</text>
+<text x="570" y="1814" font-size="7">rate must = production</text>
+
+<!-- IP-01A/B High Pressure Injection Pumps -->
+<rect x="380" y="1830" width="260" height="56" rx="2" fill="none" stroke="#111" stroke-width="2"/>
+<text x="510" y="1849" font-size="10" font-weight="700" text-anchor="middle">IP-01A / IP-01B</text>
+<text x="510" y="1863" font-size="8" text-anchor="middle">HIGH-PRESSURE INJECTION PUMPS</text>
+<text x="510" y="1875" font-size="7.5" text-anchor="middle">Duty + Standby | Centrifugal | VSD</text>
+<text x="510" y="1886" font-size="7" text-anchor="middle">120–180 bar discharge | 1800–2000m depth injection</text>
+
+<!-- Pipe from FM to IP -->
+<line x1="603" y1="1810" x2="510" y2="1810" stroke="#111" stroke-width="1.5"/>
+<line x1="510" y1="1810" x2="510" y2="1830" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+
+<!-- Injection wells -->
+<!-- INJ-01 BLT cluster -->
+<rect x="140" y="1940" width="170" height="65" rx="2" fill="none" stroke="#111" stroke-width="1.5" stroke-dasharray="6 3"/>
+<text x="225" y="1957" font-size="9" font-weight="700" text-anchor="middle">INJ-01</text>
+<text x="225" y="1970" font-size="8" text-anchor="middle">INJECTION WELL</text>
+<text x="225" y="1982" font-size="7.5" text-anchor="middle">BLT-01 cluster</text>
+<text x="225" y="1994" font-size="7" text-anchor="middle">30-35°C → 1837m Rotliegend</text>
+
+<!-- INJ-02 ZST cluster -->
+<rect x="340" y="1940" width="170" height="65" rx="2" fill="none" stroke="#111" stroke-width="1.5" stroke-dasharray="6 3"/>
+<text x="425" y="1957" font-size="9" font-weight="700" text-anchor="middle">INJ-02</text>
+<text x="425" y="1970" font-size="8" text-anchor="middle">INJECTION WELL</text>
+<text x="425" y="1982" font-size="7.5" text-anchor="middle">ZST-01 cluster</text>
+<text x="425" y="1994" font-size="7" text-anchor="middle">30-35°C → 1924m Rotliegend</text>
+
+<!-- INJ-03 ODK cluster -->
+<rect x="540" y="1940" width="170" height="65" rx="2" fill="none" stroke="#111" stroke-width="1.5" stroke-dasharray="6 3"/>
+<text x="625" y="1957" font-size="9" font-weight="700" text-anchor="middle">INJ-03</text>
+<text x="625" y="1970" font-size="8" text-anchor="middle">INJECTION WELL</text>
+<text x="625" y="1982" font-size="7.5" text-anchor="middle">ODK-01 cluster</text>
+<text x="625" y="1994" font-size="7" text-anchor="middle">30-35°C → 1986m Rotliegend</text>
+
+<!-- Pipes from IP to injection wells -->
+<line x1="510" y1="1886" x2="510" y2="1910" stroke="#111" stroke-width="2"/>
+<line x1="510" y1="1910" x2="225" y2="1910" stroke="#111" stroke-width="2"/>
+<line x1="510" y1="1910" x2="625" y2="1910" stroke="#111" stroke-width="2"/>
+<line x1="225" y1="1910" x2="225" y2="1940" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<line x1="425" y1="1910" x2="425" y2="1940" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<line x1="625" y1="1910" x2="625" y2="1940" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+
+<!-- Closed loop note -->
+<rect x="780" y="1940" width="380" height="75" rx="3" fill="none" stroke="#111" stroke-width="1.2"/>
+<text x="970" y="1957" font-size="9" font-weight="700" text-anchor="middle">CLOSED LOOP COMPLETE</text>
+<text x="970" y="1970" font-size="7.5" text-anchor="middle">Cooled brine (30-35°C) injected → migrates through</text>
+<text x="970" y="1982" font-size="7.5" text-anchor="middle">porous Rotliegend Sandstone → reheats from rock</text>
+<text x="970" y="1994" font-size="7.5" text-anchor="middle">(months to years) → returns to producers 77-81°C</text>
+<text x="970" y="2006" font-size="7.5" font-weight="700" text-anchor="middle">No fluid consumption | No emissions | Sustainable</text>
+
+<!-- ══════════════════════════════════════════
+     RIGHT PANEL — CONTROL & SAFETY + LEGEND
+══════════════════════════════════════════ -->
+<!-- Control & Safety -->
+<rect x="1250" y="340" width="228" height="390" rx="3" fill="none" stroke="#111" stroke-width="1.5"/>
+<line x1="1250" y1="355" x2="1478" y2="355" stroke="#111" stroke-width="0.8"/>
+<text x="1364" y="350" font-size="8.5" font-weight="700" text-anchor="middle">CONTROL &amp; SAFETY SYSTEMS</text>
+<text x="1262" y="371" font-size="7.5" font-weight="700">SCADA01</text>
+<text x="1262" y="381" font-size="6.5">Central SCADA | OPC-UA protocol</text>
+<text x="1262" y="390" font-size="6.5">Monitors all T/P/F | Historian logs</text>
+<line x1="1255" y1="395" x2="1473" y2="395" stroke="#111" stroke-width="0.3"/>
+<text x="1262" y="407" font-size="7.5" font-weight="700">ESD-01</text>
+<text x="1262" y="417" font-size="6.5">Emergency Shutdown — SIL rated</text>
+<text x="1262" y="426" font-size="6.5">Auto shuts all wells &amp; closes valves</text>
+<line x1="1255" y1="431" x2="1473" y2="431" stroke="#111" stroke-width="0.3"/>
+<text x="1262" y="443" font-size="7.5" font-weight="700">PRV-01</text>
+<text x="1262" y="453" font-size="6.5">Pressure Relief Valves</text>
+<text x="1262" y="462" font-size="6.5">Set at 120% design pressure</text>
+<line x1="1255" y1="467" x2="1473" y2="467" stroke="#111" stroke-width="0.3"/>
+<text x="1262" y="479" font-size="7.5" font-weight="700">BYP-01</text>
+<text x="1262" y="489" font-size="6.5">Manual + auto bypasses</text>
+<text x="1262" y="498" font-size="6.5">All major items have bypass line</text>
+<line x1="1255" y1="503" x2="1473" y2="503" stroke="#111" stroke-width="0.3"/>
+<text x="1262" y="515" font-size="7.5" font-weight="700">LD-01</text>
+<text x="1262" y="525" font-size="6.5">Leak Detection — brine circuit</text>
+<text x="1262" y="534" font-size="6.5">Groundwater protection critical</text>
+<line x1="1255" y1="539" x2="1473" y2="539" stroke="#111" stroke-width="0.3"/>
+<text x="1262" y="551" font-size="7.5" font-weight="700">UPS-01</text>
+<text x="1262" y="561" font-size="6.5">Uninterruptible Power Supply</text>
+<text x="1262" y="570" font-size="6.5">Controls &amp; safety instrumentation</text>
+<line x1="1255" y1="575" x2="1473" y2="575" stroke="#111" stroke-width="0.3"/>
+<text x="1262" y="587" font-size="7.5" font-weight="700">FG-01</text>
+<text x="1262" y="597" font-size="6.5">Refrigerant gas detectors</text>
+<text x="1262" y="606" font-size="6.5">R134a/R290 — HP room only</text>
+<line x1="1255" y1="611" x2="1473" y2="611" stroke="#111" stroke-width="0.3"/>
+<text x="1262" y="623" font-size="7.5" font-weight="700">CONTROLLERS</text>
+<text x="1262" y="633" font-size="6.5">TIC / FIC / PIC on key streams</text>
+<text x="1262" y="642" font-size="6.5">FCV-01/02/03 on splitter manifold</text>
+<text x="1262" y="651" font-size="6.5">VSD on all pumps &amp; compressor</text>
+<text x="1262" y="660" font-size="6.5">SCADA historian | OPC-UA | SIL ESD</text>
+<line x1="1255" y1="665" x2="1473" y2="665" stroke="#111" stroke-width="0.3"/>
+<text x="1262" y="675" font-size="6.5" font-style="italic">Note: Geothermal brine toxic to</text>
+<text x="1262" y="684" font-size="6.5" font-style="italic">groundwater — LD-01 critical safety</text>
+<text x="1262" y="693" font-size="6.5" font-style="italic">Injection rate monitored by FM-05/PT-05</text>
+<text x="1262" y="702" font-size="6.5" font-style="italic">to maintain reservoir pressure balance</text>
+<text x="1262" y="711" font-size="6.5" font-style="italic">Adequate producer-injector spacing</text>
+<text x="1262" y="720" font-size="6.5" font-style="italic">prevents thermal breakthrough (&gt;30yr life)</text>
+
+<!-- Legend -->
+<rect x="1250" y="750" width="228" height="280" rx="3" fill="none" stroke="#111" stroke-width="1.5"/>
+<line x1="1250" y1="765" x2="1478" y2="765" stroke="#111" stroke-width="0.8"/>
+<text x="1364" y="760" font-size="8.5" font-weight="700" text-anchor="middle">LEGEND</text>
+<!-- Solid -->
+<line x1="1262" y1="782" x2="1310" y2="782" stroke="#111" stroke-width="2"/>
+<text x="1320" y="786" font-size="7.5">Main process line</text>
+<!-- Dashed -->
+<line x1="1262" y1="800" x2="1310" y2="800" stroke="#111" stroke-width="1.5" stroke-dasharray="5 2"/>
+<text x="1320" y="804" font-size="7.5">Standby / auxiliary line</text>
+<!-- Dotted -->
+<line x1="1262" y1="818" x2="1310" y2="818" stroke="#111" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="1320" y="822" font-size="7.5">Refrigerant / dosing</text>
+<!-- Arrow -->
+<line x1="1262" y1="836" x2="1310" y2="836" stroke="#111" stroke-width="2" marker-end="url(#a)"/>
+<text x="1320" y="840" font-size="7.5">Flow direction</text>
+<!-- Pump -->
+<circle cx="1282" cy="856" r="10" fill="none" stroke="#111" stroke-width="1.5"/>
+<text x="1320" y="860" font-size="7.5">Pump (circle)</text>
+<!-- HX box -->
+<rect x="1264" y="870" width="34" height="18" fill="none" stroke="#111" stroke-width="1.5"/>
+<line x1="1265" y1="872" x2="1297" y2="886" stroke="#111" stroke-width="0.8" opacity="0.5"/>
+<text x="1320" y="882" font-size="7.5">Heat exchanger</text>
+<!-- Valve -->
+<polygon points="1282,900 1270,892 1270,908" fill="none" stroke="#111" stroke-width="1.2"/>
+<polygon points="1270,892 1258,900 1270,908" fill="none" stroke="#111" stroke-width="1.2"/>
+<text x="1320" y="904" font-size="7.5">Flow control valve (FCV)</text>
+<!-- Inj well dashed box -->
+<rect x="1262" y="914" width="34" height="16" fill="none" stroke="#111" stroke-width="1.2" stroke-dasharray="5 2"/>
+<text x="1320" y="925" font-size="7.5">Injection well (dashed)</text>
+<!-- Instrument circle -->
+<circle cx="1282" cy="946" r="10" fill="white" stroke="#111" stroke-width="1"/>
+<text x="1282" y="943" font-size="5.5" font-weight="700" text-anchor="middle">PT</text>
+<text x="1282" y="952" font-size="5.5" text-anchor="middle">###</text>
+<text x="1320" y="950" font-size="7.5">Instrument (PT/FM/TT)</text>
+<!-- Design basis box -->
+<rect x="1250" y="1045" width="228" height="95" rx="3" fill="none" stroke="#111" stroke-width="1.2"/>
+<line x1="1250" y1="1058" x2="1478" y2="1058" stroke="#111" stroke-width="0.6"/>
+<text x="1364" y="1053" font-size="8" font-weight="700" text-anchor="middle">DESIGN BASIS</text>
+<text x="1262" y="1070" font-size="7">P50 combined: 13.2 MW | Target ≥10 MW heat</text>
+<text x="1262" y="1081" font-size="7">Target ≥5 MW cooling | COP 4.0 | EER 3.5</text>
+<text x="1262" y="1092" font-size="7">PN16 brine circuits | PN10 DH circuits</text>
+<text x="1262" y="1103" font-size="7">Refrigerant: R134a or R290 (propane)</text>
+<text x="1262" y="1114" font-size="7">Brine salinity: 3-5% NaCl | ρ ~1050 kg/m³</text>
+<text x="1262" y="1125" font-size="7">3 producers: BLT+ZST+ODK = 264 m³/h</text>
+<text x="1262" y="1136" font-size="7">3 injectors: INJ-01/02/03 (dedicated)</text>
+
+<!-- Title block bottom right -->
+<rect x="1250" y="2270" width="228" height="68" rx="2" fill="none" stroke="#111" stroke-width="1.5"/>
+<line x1="1250" y1="2284" x2="1478" y2="2284" stroke="#111" stroke-width="0.6"/>
+<line x1="1364" y1="2284" x2="1364" y2="2338" stroke="#111" stroke-width="0.6"/>
+<text x="1364" y="2278" font-size="7.5" font-weight="700" text-anchor="middle">GEOTHERMAL DISTRICT ENERGY P&amp;ID</text>
+<text x="1262" y="2296" font-size="6.5">DRG: PID-GEO-001</text>
+<text x="1262" y="2307" font-size="6.5">REV: B — ODK corrected</text>
+<text x="1262" y="2318" font-size="6.5">Flow splitter added</text>
+<text x="1262" y="2329" font-size="6.5">DATE: 2026 | DRAFT</text>
+<text x="1374" y="2296" font-size="6.5">SCALE: NTS</text>
+<text x="1374" y="2307" font-size="6.5">SHEET: 1 OF 1</text>
+<text x="1374" y="2318" font-size="6.5">P50: 13.2 MW</text>
+<text x="1374" y="2329" font-size="6.5">STATUS: DRAFT</text>
+</svg>
+</div>
+</body>
+</html>
