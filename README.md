@@ -28,28 +28,28 @@ The analysis spans two linked engineering challenges: evaluating whether the geo
 
 ## Methodology
 
-Well Data (ThermoGIS)
+1. Well Data (ThermoGIS)
        │
-       ▼
-Data Cleaning & EDA ──► Correlation Analysis, Statistical Summary
+       
+2. Data Cleaning & EDA ──► Correlation Analysis, Statistical Summary
        │
-       ▼
-Reservoir Characterisation ──► Temperature · Flow Rate · Permeability · Power (MW)
+       
+3. Reservoir Characterisation ──► Temperature · Flow Rate · Permeability · Power (MW)
        │
-       ▼
-Spatial GIS Analysis ──► Well Locations · Temperature Hotspots · Power Distribution Maps
+       
+4. Spatial GIS Analysis ──► Well Locations · Temperature Hotspots · Power Distribution Maps
        │
-       ▼
-Multi-Criteria Well Scoring ──► Composite Reservoir Quality Index (Min-Max Normalised)
+       
+5. Multi-Criteria Well Scoring ──► Composite Reservoir Quality Index (Min-Max Normalised)
        │
-       ▼
-Probabilistic Scenario Analysis ──► P10 (Optimistic) · P50 (Base Case) · P90 (Conservative)
+       
+6. Probabilistic Scenario Analysis ──► P10 (Optimistic) · P50 (Base Case) · P90 (Conservative)
        │
-       ▼
-Heat Pump Integration ──► COP = 4 · HP Thermal Output · Coverage % · Surplus MW
+       
+7. Heat Pump Integration ──► COP = 4 · HP Thermal Output · Coverage % · Surplus MW
        │
-       ▼
-System Design (ASPEN Plus ) ─
+       
+8. System Design (ASPEN Plus ) ─
 
 ## Key Results
 ### Challenge 1 — Geothermal Potential
@@ -113,7 +113,7 @@ The Utrecht Science Park geothermal field is **technically and economically viab
 
 ## Author
 
-**Geothermal Analytics Team** — ThermoGIS Datathon, June 2025
+**Geothermal Analytics Team** — ThermoGIS Datathon, June 2026
 
 
 *Dataset sourced from ThermoGIS — the national geothermal data portal of the Netherlands.*
